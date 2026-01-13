@@ -1,11 +1,17 @@
 import 'dart:io';
 import 'package:path/path.dart' as p;
 
+/// A parser for finding asset references in Dart source code.
 class Parser {
+  /// The path to the project root.
   final String projectPath;
 
+  /// Creates a new [Parser] for the project at [projectPath].
   Parser(this.projectPath);
 
+  /// Finds references to the assets in [allAssets] within the `lib/` directory.
+  ///
+  /// Returns a set of asset paths that are referenced in the code.
   Future<Set<String>> findReferences(List<String> allAssets) async {
     final referencedAssets = <String>{};
     final libDir = Directory(p.join(projectPath, 'lib'));

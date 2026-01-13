@@ -1,0 +1,14 @@
+name: flutter_assets_tool_example
+description: An example of how to use the flutter_assets_tool package.
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+
+dependencies:
+  flutter_assets_tool:
+    path: ../
+  path: ^1.8.0
+
+dev_dependencies:
+  lints: ^2.0.0

@@ -1,10 +1,17 @@
 import 'dart:io';
 import 'package:path/path.dart' as p;
 
+/// A generator for creating a Dart class containing asset path constants.
 class Generator {
+  /// The path to the project root.
   final String projectPath;
+
+  /// The relative path where the generated file will be saved.
   final String outputPath;
 
+  /// Creates a new [Generator] for the project at [projectPath].
+  ///
+  /// [outputPath] defaults to `lib/generated/assets.dart`.
   Generator(this.projectPath, {this.outputPath = 'lib/generated/assets.dart'});
 
   String _toCamelCase(String text) {
@@ -20,6 +27,7 @@ class Generator {
     return result.toString();
   }
 
+  /// Generates the Dart file containing asset path constants.
   Future<void> generate(List<String> assetPaths) async {
     final buffer = StringBuffer();
     buffer.writeln('// GENERATED CODE - DO NOT MODIFY BY HAND');
