@@ -1,8 +1,9 @@
 name: flutter_assets_tool
 description: A clean, high-performance Flutter CLI tool to scan for unused assets, generate typed Dart references, and optimize app size.
 version: 1.0.0
-homepage: https://pub.dev/packages/flutter_assets_tool
+homepage: https://github.com/PrakhyatPokhrel/flutter_assets_tool
 repository: https://github.com/PrakhyatPokhrel/flutter_assets_tool
+documentation: https://github.com/PrakhyatPokhrel/flutter_assets_tool#readme
 
 executables:
   fassets: fassets
