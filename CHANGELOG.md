@@ -1,3 +1,8 @@
+# 1.0.2
+
+- Added comprehensive dartdoc comments for the public API.
+- Created an example project in the `example/` directory.
+
 # 1.0.1
 
 - Updated README with correct installation instructions for pub.dev.
