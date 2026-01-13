@@ -1,3 +1,7 @@
+# 1.0.1
+
+- Updated README with correct installation instructions for pub.dev.
+
 # 1.0.0
 
 - Initial release of `flutter_assets_tool`.

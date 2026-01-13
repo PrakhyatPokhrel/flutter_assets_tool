@@ -16,7 +16,7 @@ A Flutter CLI tool that scans your project for unused assets, cleans them, and g
 ## 📦 Installation
 
 ```bash
-dart pub global activate --source path .
+dart pub global activate flutter_assets_tool
 ```
 
 ## 🛠 Usage
